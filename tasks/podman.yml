@@ -1,0 +1,15 @@
+- name: Install podman
+  become: yes
+  apt:
+    name: podman
+    state: latest
+    update_cache: true
+
+- name: Set unqualified-search-registries to docker.io
+  ansible.builtin.lineinfile:
+    path: /etc/containers/registries.conf
+    regexp: '^unqualified-search-registries'
+    line: 'unqualified-search-registries = ["docker.io"]'
+    state: present
+    backup: yes
+  become: yes  # Use become to get the necessary privilege to modify the system file
