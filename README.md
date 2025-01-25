@@ -8,3 +8,6 @@ This is an Ansible playbook that provide a quick installation of Podman and Nvid
 sudo apt install ansible git -y
 ```
 
+## Reference
+
+- https://podman-desktop.io/docs/podman/gpu
