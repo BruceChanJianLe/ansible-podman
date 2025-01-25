@@ -22,4 +22,5 @@ podman run --rm --device nvidia.com/gpu=all nvidia/cuda:11.0.3-base-ubuntu20.04 
 
 ## Reference
 
+- https://kresna.dev/solving-podman-error-short-name-did-not-resolve-to-an-alias-and-no-unqualified-search-registries/
 - https://podman-desktop.io/docs/podman/gpu
