@@ -17,6 +17,10 @@ ansible-pull -U https://github.com/brucechanjianle/ansible-podman -K
 
 ```bash
 podman run hello-world
+```
+
+With NVIDIA Container Toolkit.
+```bash
 podman run --rm --device nvidia.com/gpu=all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
 ```
 
